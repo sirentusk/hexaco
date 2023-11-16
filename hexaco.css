@@ -1,0 +1,242 @@
+/* Reset and Base Styles */
+/* Reset default browser styles. */
+
+* {
+    color: rgb(195, 195, 195);
+    scroll-snap-type: y mandatory;    
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: calc(15px + 0.390625vw);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    background: rgb(35, 0, 36);
+    text-shadow: 2px 2px 5px black;
+    scrollbar-color: rgba(78,110,57,1) rgba(35,0,36,1) 100%; /* Gecko */
+    scrollbar-width: thin; /* Gecko */
+}
+
+html::-webkit-scrollbar { /* Chromium */
+    width: 10px;
+}
+  
+html::-webkit-scrollbar-track { /* Chromium */
+    background: rgba(35,0,36,1);
+    box-shadow: inset 1px 1px 5px black ;
+}
+  
+html::-webkit-scrollbar-thumb { /* Chromium */
+    background: linear-gradient(0deg, rgba(78,110,57,1), rgb(41, 58, 30));
+    border-radius: 10px;
+}
+  
+html::-webkit-scrollbar-thumb:hover { /* Chromium */
+    background: linear-gradient(0deg, rgba(78,110,57,1), rgb(41, 58, 30));
+    border-radius: 10px;
+}
+  
+html::-webkit-scrollbar-thumb:active { /* Chromium */
+    background: linear-gradient(0deg, rgba(78,110,57,1), rgb(41, 58, 30));
+    border-radius: 10px;
+}
+
+/* Typography */
+/* For defining global font styles. */
+
+p {
+    font-size: calc(12px + 0.390625vw);
+}
+
+h2 {
+    color: rgb(0, 127, 99);
+    font-family: 'Arabolical', fantasy;
+    font-size: calc(76px + 0.390625vw);
+    overflow: hidden;
+}
+
+h3 {
+    color: rgb(0, 127, 99);
+    font-family: 'Arabolical', fantasy;
+    font-size: calc(56px + 0.390625vw);
+    overflow: hidden;
+}
+
+a {
+    color: rgb(0, 127, 99);
+    text-decoration: none;
+}
+
+.scale {
+    font-weight: bold;
+    color: rgb(43, 154, 164);
+}
+
+.score {
+    font-weight: bold;
+    color: rgba(140, 84, 165, 0.8);
+}
+
+.percentile {
+    color: rgba(78,110,57,1);
+    
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Arabolical';
+	src: url('font/Arabolical.ttf');
+	font-style: normal;
+}
+
+/*  Royalty free commercial use font attribution https://www.fontspace.com/arabolical-font-f1598 */
+
+/* Colors and Themes */
+/* Defining color variables. */
+
+
+
+/* Custom Properties */
+/* Defining reusable CSS variables. */
+
+
+
+/* Layout and Structure */
+/* Overall layout grid, wrappers, and structural elements. */
+
+section {
+    background: radial-gradient(circle, rgba(78,110,57,1) 0%, rgba(35,0,36,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 3;
+    scroll-snap-align: start;
+    overflow: auto;
+}
+
+.page {
+    width: 50%;
+}
+
+.top {
+	position: fixed;
+    right: 15px;
+	bottom: 20px;
+	padding: 10px 10px 10px 12px;
+	background: rgba(35,0,36,1);
+	border-radius: 100px;
+	box-shadow: 3px 3px 10px #000000;
+}
+
+/* Table Styles */
+/* Styles related table layout and formatting. */
+
+
+
+/* Navigation and Header */
+/* Styles specific to site navigation and header components. */
+
+
+
+/* Components and Modules */
+/* Reusable components like buttons, cards, modals, etc. */
+
+
+
+/* Forms and Inputs */
+/* Styling form elements and input fields. */
+
+
+
+/* Imagery and Videos */
+/* Styles related to images, videos and icons. */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(43, 154, 164, 0.5), rgb(128, 92, 0), rgb(0, 127, 99));
+    border-radius: 50px;
+    margin-top: 50px;
+    padding: 50px 50px 30px 50px;
+}
+
+/* Utilities and Helpers */
+/* Small reusable classes with a single purpose or function */
+
+
+
+/* Accessibility Enhancements */
+/* Improve accessibility like focus states and screen reader-only text. */
+
+
+
+/* Responsive Styles */
+/* Media queries and styles that target different screen sizes and devices. */
+
+@media only screen and (max-width: 920px) {
+    .page {
+        width: 80%;
+    }
+
+    h2 {
+        color: rgb(0, 127, 99);
+        font-family: 'Arabolical', fantasy;
+        font-size: calc(76px + 0.390625vw);
+        overflow: hidden;
+    }
+    
+    h3 {
+        color: rgb(0, 127, 99);
+        font-family: 'Arabolical', fantasy;
+        font-size: calc(40px + 0.390625vw);
+        overflow: hidden;
+    }
+
+    p {
+        font-size: calc(11px + 0.390625vw);
+    }
+
+    * {
+        font-size: calc(12px + 0.390625vw);
+    }
+}
+
+/* State Styles */
+/* Pseudo-classes and interactive states like :hover, :focus, etc. */
+
+a:hover {
+    color: rgb(43, 154, 164);
+    cursor: pointer;
+}
+
+/* Animations and Keyframes */
+/* Defining CSS animations and keyframes. */
+
+
+
+/* Cross-Browser Compatibility */
+/* Styling across different browsers. */
+
+
+
+/* Footers */
+/* Styles specific to the footer section. */
+
+
+
+/* Print Styles */
+/* Styles that apply when the document is printed. */
+
